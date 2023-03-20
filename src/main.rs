@@ -17,4 +17,9 @@ fn main() {
     mut_num = 2;
     println!("mut_num's value has changed = {mut_num}");
 
+    // const keyword 
+    // must be a const at compile time
+    const CONST_USES_UPPERCASE_SNAKE_CASE : f64 = 9.45;
+    println!("CONST_USES_UPPERCASE_SNAKE_CASE's value is = {CONST_USES_UPPERCASE_SNAKE_CASE}");
+
 }
