@@ -22,4 +22,18 @@ fn main() {
     const CONST_USES_UPPERCASE_SNAKE_CASE : f64 = 9.45;
     println!("CONST_USES_UPPERCASE_SNAKE_CASE's value is = {CONST_USES_UPPERCASE_SNAKE_CASE}");
 
+    {//this is the start of a block
+        let y = 100;
+        println!("y is only in scope within the brackets where it was created -- y = {y}");
+    }//this is the end of a block
+    println!("y is now out of scope");
+
+    // shadowing
+    let s = 5;
+    {//this is the start of a block
+        let s = 100;
+        println!("while inside the brackets it will use the inner s variable. s = {s}");
+    }//this is the end of a block
+    println!("once outside the brackets it will use the outter s variable. s = {s}");
+
 }
