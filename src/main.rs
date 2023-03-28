@@ -36,4 +36,10 @@ fn main() {
     }//this is the end of a block
     println!("once outside the brackets it will use the outter s variable. s = {s}");
 
+    fn calc_sum(addend: i32, summand: i32) -> i32 {
+        addend + summand
+    }
+
+    let sum: i32 = calc_sum(2,2);
+    println!("sum of 2 plus 2 is {sum}");
 }
