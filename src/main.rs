@@ -42,4 +42,7 @@ fn main() {
 
     let sum: i32 = calc_sum(2,2);
     println!("sum of 2 plus 2 is {sum}");
+
+    // use the name of this project to access code from library file
+    rust-example::greet();
 }
